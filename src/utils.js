@@ -1,0 +1,7 @@
+// format currrency to full no. with currency symbol
+
+export const currencyFormatter = new Intl.NumberFormat(undefined, {
+	currency: 'USD',
+	style: 'currency',
+	minimumFractionDigits: 0,
+})
