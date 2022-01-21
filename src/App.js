@@ -17,7 +17,7 @@ function App() {
 					gap: '1rem',
 					alignItems: 'flex-start',
 				}}>
-				<BudgetCard name='Entertainment' amount={700} max={1000} />
+				<BudgetCard name='Entertainment' amount={500} max={1000} gray />
 			</div>
 		</Container>
 	)
