@@ -53,6 +53,7 @@ export const BudgetProvider = ({ children }) => {
 	}
 
 	const deleteBudget = ({ id }) => {
+		// TODO Deal with deleted expenses => move to uncatogrized budgets
 		setBudgets((previousBudgets) => {
 			return previousBudgets.filter((budget) => budget.id !== id)
 		})
