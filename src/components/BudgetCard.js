@@ -1,7 +1,7 @@
 import { Button, Card, ProgressBar, Stack } from 'react-bootstrap'
 import { currencyFormatter } from '../utils'
 
-const BudgetCard = ({ name, amount, max, gray }) => {
+const BudgetCard = ({ name, amount, max, gray, onAddExpenseClick }) => {
 	const bgClassNames = []
 	if (amount > max) bgClassNames.push('bg-danger', 'bg-opacity-10')
 	else if (gray) bgClassNames.push('bg-light')
@@ -29,7 +29,9 @@ const BudgetCard = ({ name, amount, max, gray }) => {
 					direction='horizontal'
 					gap={2}
 					className='mt-4 justify-content-end'>
-					<Button variant='outline-secondary'>Add Expense</Button>
+					<Button variant='outline-secondary' onClick={onAddExpenseClick}>
+						Add Expense
+					</Button>
 					<Button variant='outline-secondary'>View Expenses</Button>
 				</Stack>
 			</Card.Body>
