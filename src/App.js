@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useBudgets } from './contexts/BudgetContext'
 import AddExpenseModal from './components/AddExpenseModal'
 import UncatogerizedBudgetCard from './components/UncatogerizedBudgetCard'
+import TotalBudgetCard from './components/TotalBudgetCard'
 
 function App() {
 	const [showAddBudgetModal, setShowAddBudgetModal] = useState(false)
@@ -56,6 +57,7 @@ function App() {
 						)
 					})}
 					<UncatogerizedBudgetCard />
+					<TotalBudgetCard />
 				</div>
 			</Container>
 			<AddBudgetModal
