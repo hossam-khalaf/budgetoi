@@ -56,7 +56,7 @@ function App() {
 							/>
 						)
 					})}
-					<UncatogerizedBudgetCard />
+					<UncatogerizedBudgetCard onAddExpenseClick={openAddExpenseModal} />
 					<TotalBudgetCard />
 				</div>
 			</Container>
